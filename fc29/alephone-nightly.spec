@@ -1,5 +1,5 @@
 %define name AlephOne-Nightly
-%define version %(date +"%Y%m%d")
+%define version 1.3
 %define release 1
 
 Summary: 3D first-person shooter game

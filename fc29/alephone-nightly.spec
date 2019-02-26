@@ -38,7 +38,7 @@ alephone "~/Marathon Infinity"
 %setup -q
 
 %build
-%configure
+bash autogen.sh
 make
 
 %install

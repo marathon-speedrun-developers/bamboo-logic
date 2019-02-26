@@ -54,7 +54,6 @@ rm -rf ${RPM_BUILD_ROOT}
 %{_bindir}/alephone
 %{_datadir}/AlephOne/Fonts
 %{_datadir}/AlephOne/MML
-%{_datadir}/AlephOne/Themes/Default
 %{_mandir}/man6/alephone.6.gz
 
 %changelog

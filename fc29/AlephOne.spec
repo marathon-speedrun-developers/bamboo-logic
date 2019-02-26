@@ -1,5 +1,5 @@
 %define name AlephOne-Nightly
-%define version %(date +"%Y%m%d")
+%define version 1.3
 %define release 1
 
 Summary: 3D first-person shooter game
@@ -14,8 +14,8 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 # not relocatable because the data file packages depend upon the location
 # of the data files in this package
 
-Requires: SDL >= 1.2.0 SDL_image >= 1.2.0 SDL_net 
-BuildRequires: SDL-devel SDL_image-devel SDL_net-devel boost-devel 
+Requires: SDL2 >= 1.2.0 SDL2_image >= 1.2.0 SDL2_net 
+BuildRequires: SDL2-devel SDL2_image-devel SDL2_net-devel boost-devel 
 
 %description
 /!\ This is a nightly build provided by the Mirata project. No guarantee
@@ -38,7 +38,7 @@ alephone "~/Marathon Infinity"
 %setup -q
 
 %build
-%configure
+bash autogen.sh
 make
 
 %install

@@ -52,6 +52,9 @@ rm -rf ${RPM_BUILD_ROOT}
 %defattr(-,root,root)
 %doc AUTHORS COPYING INSTALL.Unix README docs/MML.html docs/Lua.html
 %{_bindir}/alephone
+%{_datadir}/icons
+%{_datadir}/mime
+%{_datadir}/doc
 %{_datadir}/AlephOne/MML
 %{_datadir}/AlephOne/Plugins
 %{_mandir}/man6/alephone.6.gz

@@ -54,7 +54,6 @@ rm -rf ${RPM_BUILD_ROOT}
 %{_bindir}/alephone
 %{_datadir}/icons
 %{_datadir}/mime
-%{_datadir}/doc
 %{_datadir}/AlephOne/MML
 %{_datadir}/AlephOne/Plugins
 %{_mandir}/man6/alephone.6.gz

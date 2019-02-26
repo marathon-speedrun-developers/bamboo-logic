@@ -58,25 +58,6 @@ rm -rf ${RPM_BUILD_ROOT}
 %{_mandir}/man6/alephone.6.gz
 
 %changelog
-* Sat Jun 21 2008 Gregory Smith <wolfy@treellama.org>
-- removed the dependence on AlephOne-core-data (users can use unimap zip files)
-- removed deprecated cheats docs
-- updated required libraries (there are many)
-
-* Sun Nov 20 2005 Christian Bauer <www.cebix.net>
-- modernized the spec file a bit
-
-* Thu Oct  5 2000 Christian Bauer <Christian.Bauer@uni-mainz.de>
-- Added docs and theme data files
-- Package name and version are set by configure script
-
-* Fri Sep 30 2000 Tom Moertel <tom-rpms-alephone@moertel.com>
-- Added a requirement to the base package for AlephOne-core-data
-- Split out the Marathon Infinity Demo data into its own package
-
-* Thu Sep 29 2000 Tom Moertel <tom-rpms-alephone@moertel.com>
-- Added patch for SDL 1.1.5 SDL_SetClipping incompatability.
-
-* Sat Sep 23 2000 Tom Moertel <tom-rpms-alephone@moertel.com>
-- Added Marathon Infinity Demo data to package.
-
+* Tue Feb 26 2019 Mirata Developers <marathonruns@gmail.com>
+- For the latest information on Aleph One, check the changelog
+- at github.com/Aleph-One-Marathon/alephone/commits/master

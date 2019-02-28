@@ -1,4 +1,4 @@
-%define name AlephOne
+%define name AlephOne-Nightly
 %define version 1.3
 %define release 1
 
@@ -6,9 +6,9 @@ Summary: 3D first-person shooter game
 Name: %{name}
 Version: %{version}
 Release: %{release}
-License: GNU GPL3
+License: GPL
 Group: Amusements/Games
-Source: release-20181006.tar.gz
+Source: source.tar.gz
 URL: http://alephone.cebix.net
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 # not relocatable because the data file packages depend upon the location
@@ -18,6 +18,9 @@ Requires: SDL2 >= 1.2.0 SDL2_image >= 1.2.0 SDL2_net
 BuildRequires: SDL2-devel SDL2_image-devel SDL2_net-devel boost-devel 
 
 %description
+/!\ This is a nightly build provided by the Mirata project. No guarantee
+is made this these will run, or even compile. /!\
+
 Aleph One is an Open Source 3D first-person shooter game, based on the game
 Marathon 2 by Bungie Software. It is set in a Sci-Fi universe dominated by
 deviant computer AIs and features a well thought-out plot. Aleph One
@@ -56,6 +59,6 @@ rm -rf ${RPM_BUILD_ROOT}
 %{_mandir}/man6/alephone.6.gz
 
 %changelog
-* Tue Feb 26 2019 Aleph One Developers <example@example.com>
+* Tue Feb 26 2019 Mirata Developers <marathonruns@gmail.com>
 - For the latest information on Aleph One, check the changelog
 - at github.com/Aleph-One-Marathon/alephone/commits/master

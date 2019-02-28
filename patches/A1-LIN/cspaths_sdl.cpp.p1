@@ -1,0 +1,12 @@
+--- cspaths_sdl.cpp	2019-02-28 03:26:45.508414929 -0500
++++ patched-cspaths.cpp	2019-02-28 03:26:14.773163713 -0500
+@@ -174,7 +174,7 @@
+ 	{
+ 		const char *home = getenv("HOME");
+ 		if (home)
+-			local_dir = std::string(home) + "/.alephone";
++			local_dir = std::string(home) + "snap/alephone/current";
+ 	}
+ 	return local_dir;
+ }
+
